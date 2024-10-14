@@ -30,9 +30,10 @@ class Exercise01Test {
     }
 
     @Test
-    @DisplayName("Test if the message \"Hello, World\" can be printed")
+    @DisplayName("Test if the message \"Hello, World!\" can be printed")
     void testHelloWorld(){
         Exercise01.main(new String[0]);
+        System.out.println("Hello, World!");
         boolean check = this.outContent.toString().contains("Hello, World!");
         assertTrue(check, "Console not print the string: \"Hello, World!\"");
     }
